@@ -1,0 +1,105 @@
+@import "./base/_base";
+@import "./utils/_variables";
+@import "./utils/_mixins";
+@import "./components/_recipe";
+@import "./components/_recipe-list";
+@import "./components/_search";
+
+.recipe-item-specs {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 25px;
+  h1 {
+    margin: 0px;
+    // padding-left: 25px;
+  }
+  h3 {
+    margin: 0px 1px;
+    // padding-left: 25px;
+    color: #27ae60;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+}
+
+.recipe-info-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: auto;
+  justify-content: left;
+  margin-top: 5px;
+
+  p.time:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    padding: 3px;
+  }
+
+  p.calorie:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f3fd";
+    padding: 3px;
+  }
+}
+
+hr {
+  width: 50px;
+  height: 1px;
+  border: 0px;
+  border-top: 3px solid #d35400;
+  padding: 0px;
+}
+
+.info-items {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #747d8c;
+  margin: 2px;
+  margin-left: 14px;
+}
+
+.btn-container {
+  @include flexbox(flex, center, center);
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+}
+
+.btn-grp {
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: 0px solid;
+  background-color: #222831;
+  color: white;
+  outline: none;
+}
+
+.recipe-card-btn {
+  padding: 5px;
+  width: 170px;
+  height: 35px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid #e67e22;
+  background-color: whitesmoke;
+  color: white;
+  color: #e67e22;
+  font-weight: bold;
+  outline: none;
+
+  &:hover {
+    background-color: #d35400;
+    color: white;
+    border: 0px;
+  }
+}

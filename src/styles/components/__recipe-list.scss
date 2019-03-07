@@ -1,0 +1,8 @@
+.recipe-list-container {
+  @include flexbox(flex, center, center);
+  // display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: $size-sm;
+  margin-top: $size-md * 2;
+}

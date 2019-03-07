@@ -1,0 +1,29 @@
+@import "../utils/_variables";
+
+.recipe-search-container {
+  @include flexbox(flex, center, center);
+  width: auto;
+  height: auto;
+  padding: $padding-md;
+  margin-top: 80px;
+}
+
+.form-container {
+  @include flexbox(flex, center, center);
+}
+
+.form-items {
+  padding: $size-sm;
+  border-radius: ($size-lg)-10;
+  background: $recipe-box-background-color;
+  margin: $size-sm;
+  height: 40px;
+  width: 230px;
+  box-sizing: border-box;
+  border: 2px solid #222831;
+  text-transform: capitalize;
+  outline: none;
+  color: white;
+  font: $base-size;
+  line-height: 40px;
+}

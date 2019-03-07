@@ -1,0 +1,9 @@
+@mixin flexbox($flexDisplay, $justify-content-position, $align-items-position) {
+  display: $flexDisplay;
+  justify-content: $justify-content-position;
+  align-items: $align-items-position;
+}
+
+@mixin custom-transition($background-color, $time, $effect) {
+  transition: $background-color $time $effect;
+}
